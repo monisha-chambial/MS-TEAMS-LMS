@@ -1,0 +1,273 @@
+body
+{
+    margin:0;
+    padding:0;
+    min-height: 400px;
+    font-family:sans-serif;
+    background-image: url("back1.jpg");
+    background-size: cover;
+    
+    
+    
+}
+.container
+{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 200px auto;
+    flex-wrap: wrap;
+
+}
+.container1
+{
+    position: relative;
+    width: 1200px;
+    height: 100px;
+    margin: 100px auto;
+    background : rgba(0, 0, 0, 0.493);
+    border-color: rgba(0, 0, 0, 0.507);
+    align-self: center;
+    text-align: center;
+
+}
+.container2
+{
+    position: relative;
+    width: 1200px;
+    height: 150px;
+    margin: 100px auto;
+    background : rgba(24, 20, 23, 0.849);
+    border-color: rgba(92, 79, 94, 0.856);
+    align-self: center;
+    text-align: center;
+    
+
+}
+.img1
+{
+    position: fixed;
+   top:0;
+   left:0;
+}
+
+.container .box
+{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(500px - 30px);
+    background: rgb(141, 11, 87);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 20px;
+    
+}
+.container .box .icon
+{
+    position: absolute;
+    top: 0;
+    left :0;
+    width: 100%;
+    height: 100%;
+    background: purple ;
+    transition: 0.5s;
+    z-index: 1;
+}
+.container .box:hover .icon
+{
+    top: 20px;
+    right: calc(50% -40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+}
+.container .box .icon .fa
+{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size :80px;
+    transition: 0.5s;
+    color:#fff;
+}
+.container .box:hover .icon .fa
+{
+    font-size :20px;
+    
+}
+.container .box .content
+{
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity:0;
+}
+.container .box:hover .content
+{
+    top:100px;
+    opacity:1;
+}
+.container .box .content h3{
+    margin: 0 0 10px;
+    padding: 0;
+    color:#fff;
+    font-size: 40px;
+}
+
+.container .box .content h5{
+    margin: 0 0 10px;
+    padding: 0;
+    color:#fff;
+    font-size: 0px;
+}
+.container .box:nth-child(1) .icon
+{
+    background: #ffc107;
+
+}
+.container .box:nth-child(1)
+{
+    background: #fbc02d;
+
+}
+.container .box:nth-child(2) .icon
+{
+    background: #ec98b4;
+
+}
+.container .box:nth-child(2)
+{
+    background: #f8bbd0;
+
+}
+.container .box:nth-child(3) .icon
+{
+    background: #3fc4e6;
+
+}
+.container .box:nth-child(3)
+{
+    background: #6fcce0;
+
+}
+.container .box:nth-child(4) .icon
+{
+    background: rgb(245, 72, 9);
+
+}
+.container .box:nth-child(4)
+{
+    background: rgba(255, 92, 33, 0.87);
+
+}
+.container .box:nth-child(5) .icon
+{
+    background:rgb(145, 226, 24);
+
+}
+.container .box:nth-child(5)
+{
+    background: greenyellow;
+
+}
+.container .box:nth-child(6) .icon
+{
+    background:#7b1fa2;
+
+}
+.container .box:nth-child(6)
+{
+    background: #b33fe6;
+
+}
+.container1 .heading
+{
+    position: relative;
+    font-size:4em;
+    letter-spacing: 15px;
+    color:#0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+    line-height: 0.99em;
+    outline:none;
+    animation: animate 5s linear infinite;
+
+}
+.container2 .heading
+{
+    position: relative;
+    font-size:4em;
+    letter-spacing: 15px;
+    color:#044d16;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+    line-height: 0.99em;
+    outline:none;
+    animation: animate1 5s linear infinite;
+
+}
+@keyframes animate 
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    
+    {
+        color:#cacaca;
+        box-shadow:none;
+    }    
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color:#fff;
+        box-shadow: 0 0 10px #02c4ff,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4,
+        
+    
+    
+    }
+}
+@keyframes animate1 
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    
+    {
+        color:#f0e2f0;
+        box-shadow:none;
+    }    
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color:#fff;
+        box-shadow: 0 0 10px #02c4ff,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4,
+        
+    
+    
+    }
+}
+.footer {
+     
+    
+    
+   font-size: medium;
+    color: rgb(53, 53, 56);
+    text-align: center;
+    min-height: 100px;
+    font-size: 24px;
+    margin-top: 3%;
+  }
